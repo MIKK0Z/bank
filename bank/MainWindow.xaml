@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:bank"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="500">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" HorizontalContentAlignment="Center">SUMA WPLAT</Label>
+        <Label Grid.Row="0" Grid.Column="1" Foreground="Green" HorizontalContentAlignment="Center">0.00zl</Label>
+        <Label Grid.Row="0" Grid.Column="2" HorizontalContentAlignment="Center">SUMA WYPLAT</Label>
+        <Label Grid.Row="0" Grid.Column="3" Foreground="Red" HorizontalContentAlignment="Center">0.00zl</Label>
+        
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <TextBox Grid.Row="1" Grid.Column="0" Margin="20"></TextBox>
+            
+            <Button Grid.Row="0" Grid.Column="1" Margin="10">ZDEPONUJ</Button>
+            <Button Grid.Row="1" Grid.Column="1" Margin="10">WYBIERZ OKRELONA KWOTE</Button>
+            <Button Grid.Row="2" Grid.Column="1" Margin="10">WYBIERZ WSZYTSKO</Button>
+        </Grid>
+        
+        <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Center">dokonano wyplaty: 0.00zl</Label>
+        
+        <Label Grid.Row="3" Grid.Column="1" HorizontalContentAlignment="Right">STAN KONTA: </Label>
+        <Label Grid.Row="3" Grid.Column="2" Foreground="Aqua">0.00zl</Label>
     </Grid>
 </Window>
